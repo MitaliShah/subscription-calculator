@@ -1,0 +1,42 @@
+@import 'normalize.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica;
+}
+
+html {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: linear-gradient(90deg, #1a5c1b, #3e6a1d, #5e7822, #7d852a, #9d9235, #be9e44, #deaa56, #ffb56b);
+}
+
+/*** Header style***/
+.title {
+  display: inline-block;
+  color: #F5F5F5;
+  font-size: 35px;
+  border-bottom: 0.2px solid black;  
+  margin: 0;
+  line-height: 1.5;
+}
+
+header {
+  text-align: center;
+  margin: 20px;
+}
+
+@media(min-width: 500px){
+  .title {
+    font-size: 45px;
+  }
+
+  html, body {
+    background: linear-gradient(90deg, #5c1227, #762631, #8f3b3b, #a85144, #c0684d, #d68156, #eb9a60, #ffb56b);
+  }
+}
