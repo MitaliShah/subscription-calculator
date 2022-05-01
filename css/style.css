@@ -23,7 +23,7 @@ body {
 }
 
 html, body {
-  background: radial-gradient(circle at 50% 50%, #ffffff, #fff4e9, #ffead4, #ffdfbf, #ffd4aa, #ffca95, #ffbf80, #ffb56b);
+  background-color: whitesmoke;
 }
 
 /*** Header style***/
@@ -55,8 +55,8 @@ header {
   flex-direction: column; 
   justify-content: space-around;  
   align-items: center;
-  background-color: white;
-  color: #1a5c1b;
+  background-color: #2E2467;
+  color: whitesmoke;
 }
 
 .subscription-select, .duration-select {
@@ -69,7 +69,6 @@ header {
 
 label {
   font-size: 30px;
-  color: rgb(57, 55, 55);
 }
 
 select {
@@ -98,10 +97,6 @@ select#months {
 @media(min-width: 500px){
   .title {
     font-size: 45px;
-  }
-
-  html, body {
-    background: radial-gradient(circle at 50% 50%, #ffffff, #fff4fb, #ffe8f6, #ffdcf2, #ffd1ed, #ffc5e9, #ffb9e4, #ffade0);
   }
 
   .congrats {
