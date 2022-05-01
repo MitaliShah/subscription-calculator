@@ -16,8 +16,14 @@ html {
   padding: 0;
 }
 
+body {  
+  height: 100vh;
+  font-family: "Cabin", sans-serif;
+  line-height: 1.4;
+}
+
 html, body {
-  background: linear-gradient(90deg, #1a5c1b, #3e6a1d, #5e7822, #7d852a, #9d9235, #be9e44, #deaa56, #ffb56b);
+  background: radial-gradient(circle at 50% 50%, #ffffff, #fff4e9, #ffead4, #ffdfbf, #ffd4aa, #ffca95, #ffbf80, #ffb56b);
 }
 
 /*** Header style***/
@@ -25,9 +31,11 @@ html, body {
   display: inline-block;
   color: #F5F5F5;
   font-size: 35px;
+  font-family: 'Bebas Neue', cursive;
   border-bottom: 0.2px solid black;  
   margin: 0;
   line-height: 1.5;
+  color: seagreen;
 }
 
 header {
@@ -40,11 +48,51 @@ header {
 .container {
   height: 90vh;
   width: 80%;
+  max-width: 800px;
+  max-height: 700px;
   margin: auto;
   display: flex;
   flex-direction: column; 
   justify-content: space-around;  
   align-items: center;
+  background-color: white;
+  color: #1a5c1b;
+}
+
+.subscription-select, .duration-select {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+label {
+  font-size: 30px;
+  color: rgb(57, 55, 55);
+}
+
+select {
+  width: 100%;
+}
+
+select#subscription,
+select#months {
+  padding: 17px;
+}
+
+.selections {
+  width: 100%;
+  max-width: 700px;
+}
+
+.congrats {
+  width: 80%;
+  text-align: center;
+  padding: 15px 1px;
+  margin: 20px 1px;
+  font-size: 20px;
+  border: 4px solid grey;
 }
 
 @media(min-width: 500px){
@@ -53,6 +101,10 @@ header {
   }
 
   html, body {
-    background: linear-gradient(90deg, #5c1227, #762631, #8f3b3b, #a85144, #c0684d, #d68156, #eb9a60, #ffb56b);
+    background: radial-gradient(circle at 50% 50%, #ffffff, #fff4fb, #ffe8f6, #ffdcf2, #ffd1ed, #ffc5e9, #ffb9e4, #ffade0);
+  }
+
+  .congrats {
+    font-size: 25px;
   }
 }
